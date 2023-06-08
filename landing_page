@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Data Science Portfolio</title>
+  <style>
+    /* Add your own custom CSS styles here */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Introduce yourself and highlight your expertise as a data scientist.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <h3>Project 1</h3>
+        <p>Description of your first project. Include key details and outcomes.</p>
+        <p><a href="#">Link to the project repository or live demo</a></p>
+      </li>
+      <li>
+        <h3>Project 2</h3>
+        <p>Description of your second project. Highlight its significance and impact.</p>
+        <p><a href="#">Link to the project repository or live demo</a></p>
+      </li>
+      <!-- Add more project items as needed -->
+    </ul>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <ul>
+      <li>
+        <h3>Blog Post 1</h3>
+        <p>Summary of your blog post. Include key insights and takeaways.</p>
+        <p><a href="#">Link to the full blog post</a></p>
+      </li>
+      <li>
+        <h3>Blog Post 2</h3>
+        <p>Summary of your blog post. Share your thoughts and analysis.</p>
+        <p><a href="#">Link to the full blog post</a></p>
+      </li>
+      <!-- Add more blog post items as needed -->
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Your Name</p>
+  </footer>
+</body>
+</html>
