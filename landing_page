@@ -1,68 +1,120 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Data Science Portfolio</title>
+  <title>Vibhor Sharma - Data Scientist</title>
   <style>
     /* Add your own custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
     <nav>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#achievements">Achievements</a>
     </nav>
   </header>
 
   <section id="about">
     <h2>About</h2>
-    <p>Introduce yourself and highlight your expertise as a data scientist.</p>
+    <p>International data scientist experienced in delivering data-driven solutions with expertise in Python, SQL, Tableau, AWS, and statistical analysis. Skilled in leading project teams, managing stakeholders, and scoping projects to meet business objectives. Excellent communication and collaboration skills, adaptability, and business acumen. Gained valuable knowledge and cultural experience from studying and working in different countries, enabling effective collaboration with diverse teams and stakeholders.</p>
+    <p>Email: <a href="mailto:vibhorsharmadsc@gmail.com">vibhorsharmadsc@gmail.com</a></p>
+    <p>Phone: +31-651776172</p>
+    <p>Location: Eindhoven, The Netherlands</p>
+    <p>GitHub: <a href="https://github.com/vibsha">github.com/vibsha</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/vibhorsha">linkedin.com/in/vibhorsha</a></p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <section id="experience">
+    <h2>Experience</h2>
+    <h3>Data Scientist, Vion Food Group, Hendrix Genetics</h3>
     <ul>
       <li>
-        <h3>Project 1</h3>
-        <p>Description of your first project. Include key details and outcomes.</p>
-        <p><a href="#">Link to the project repository or live demo</a></p>
+        <p>Led the AgriFood Innovation project, collaborating with Hendrix Genetics and Connecting Agri & Food to improve pig health on Dutch farms through data-driven tools.</p>
+        <p>Developed design strategies to combine different data sources at different steps of the pig supply chain to build a data-driven tool using Python.</p>
+        <p>Facilitated synergy between stakeholders, defined project goals, and ensured timely completion of deliverables.</p>
+        <p>Result: Improved pig health by X% and achieved Y% reduction in costs through data-driven decision making.</p>
       </li>
-      <li>
-        <h3>Project 2</h3>
-        <p>Description of your second project. Highlight its significance and impact.</p>
-        <p><a href="#">Link to the project repository or live demo</a></p>
-      </li>
-      <!-- Add more project items as needed -->
     </ul>
+
+    <!-- Add more experience items as needed -->
   </section>
 
-  <section id="blog">
-    <h2>Blog</h2>
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <p>Python, scikit-learn (sklearn), pandas, PyTorch, SQL, Tableau, Exploratory data analysis (EDA), Data Visualization, Dashboard, Dash, Statistical Data Analysis, Supervised machine learning, Flask, Amazon Web Services (AWS), AWS Elastic Beanstalk, Customer RFM analysis, Customer Segmentation Strategy.</p>
+    <h3>Soft Skills</h3>
+    <p>Strong communication and collaboration skills, business acumen, stakeholder management, project scoping, adaptability.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <h3>Engineering Doctorate (EngD) Data Science, Eindhoven University of Technology (TU/e), Eindhoven, The Netherlands</h3>
+    <p>Add details about your education here, including other institutions attended.</p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <h3>Scholarships</h3>
     <ul>
-      <li>
-        <h3>Blog Post 1</h3>
-        <p>Summary of your blog post. Include key insights and takeaways.</p>
-        <p><a href="#">Link to the full blog post</a></p>
-      </li>
-      <li>
-        <h3>Blog Post 2</h3>
-        <p>Summary of your blog post. Share your thoughts and analysis.</p>
-        <p><a href="#">Link to the full blog post</a></p>
-      </li>
-      <!-- Add more blog post items as needed -->
+      <li>2017-2019 EIT Digital Merit Scholarship awardee for pursuing a master's degree in the EU. Scholarship value € 44,000.</li>
+      <li>2015-2017 Chinese Ministry of Education Scholarship for meritorious international students. Scholarship value € 5000.</li>
+      <li>2013-2015 Huawei Maitree Scholarship awardee for pursuing a bachelor's degree in China. Scholarship value € 6000.</li>
     </ul>
-  </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>You can reach me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+    <h3>Leadership Initiatives</h3>
+    <ul>
+      <li>Secretary DSConnect, an organization for all data science engineering doctorate trainees and graduates at TU/e. (2021 - 2022)</li>
+      <li>Led the team of three to win at Den Bosch city data challenge for health hackathon 2021.</li>
+    </ul>
   </section>
 
   <footer>
-    <p>&copy; 2023 Your Name</p>
+    <p>&copy; 2023 Vibhor Sharma</p>
   </footer>
+
+  <script>
+    // Scroll to the corresponding section when a nav link is clicked
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
