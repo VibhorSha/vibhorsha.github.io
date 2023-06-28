@@ -1,0 +1,9 @@
+/* Below is the CSS styling for the display picture */
+
+<style>
+  /* Add this CSS rule */
+  #about img {
+    display: block;
+    margin: 0 auto;
+  }
+</style>
